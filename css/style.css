@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    background-color: #e7b1fc;
+}
+
+#homescreen{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 2vmax auto;
+    grid-template-areas:
+    "lg hd"
+    "lg srch"
+    "as1 mn" ;
+}
+
+.BB{
+    grid-area: lg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.logo{
+    width: 90%;
+    border-radius: 0.2vmax;
+}
+
+header{
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 5vmax;
+    margin: 2%;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vmax;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vmax;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search{
+    grid-area: srch;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.bar{
+    border-radius: 1.2vmax;
+    width: 75%;
+}
+
+.categories{
+    grid-area: as1;
+    background-color: rgb(184, 184, 184);
+}
+
+ul{
+    list-style-type: none;
+    padding: 1vmax;
+}
+
+li{
+    width: 100%;
+    list-style-position: inside;    
+    border-color: black;
+    border: 0.1vmax solid;
+    border-radius: 0.3vmax;
+    margin-top: 0.5vmax;
+    font-size: 2vmax;
+    transition: 0.3s;
+}
+li:hover{
+    transform: scale(1.1);
+}
+
+#books{
+    display: flex;
+    grid-area: mn;
+    flex-wrap: wrap;
+    background-color: #9c69b0;
+    padding-top: 0.6vmax;
+    margin-top: 1vmax;
+}
+
+.book{
+    height: 25vmax;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5vmax;
+    margin-bottom: 0.5vmax;
+    transition: 0.3s;
+}
+.book:hover{
+    transform: scale(1.07);
+}
+
+#fantasy{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 2vmax auto;
+    grid-template-areas:
+    "lg hd"
+    "lg srch"
+    "as1 mn" ;
+}
+
+#fantasymain{
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "Bks Txt" ;
+    background-color:#9c69b0 ;
+    margin-top: 1vmax;
+}
+
+.fantasybook{
+    max-height: 25vmax;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vmax;
+    transition: 0.3s;
+}
+.fantasybook:hover{
+    transform: scale(1.04);
+}
+
+.fantasytext{
+    width: 100%;
+    font-size: 3vmax;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+#lotr{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 2vmax auto;
+    grid-template-areas:
+    "lg hd"
+    "lg srch"
+    "as1 mn" ;
+}
+
+#lotrmain{
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img buy";
+    background-color: #9c69b0;
+    margin-top: 1vmax;
+}
+
+#lotrimgbox{
+    grid-area: img;
+    display: flex;
+    align-content: center;
+}
+
+#lotrimg{
+    height: auto;
+    max-height: 40vmax;
+    margin: 0.5vmax;
+}
+
+#lotrbuybox{
+    grid-area: buy;
+    background-color: rgba(0, 0, 0, 0.495);
+    color: white;
+    padding-left: 1vmax;
+}
+
+#buybutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vmax;
+    background-color: red;
+    width: 50%;
+    transition: 0.3s;
+}
+#buybutton:hover{
+    transform: scale(1.08);
+}
