@@ -67,7 +67,7 @@ a{
 
 .categories{
     grid-area: as1;
-    background-color: rgb(184, 184, 184);
+    background-color: #b8b8b8;
 }
 
 ul{
@@ -76,6 +76,7 @@ ul{
 }
 
 li{
+    display: block;
     width: 100%;
     list-style-position: inside;    
     border-color: black;
@@ -87,6 +88,10 @@ li{
 }
 li:hover{
     transform: scale(1.1);
+}
+li a{
+    width: 100%;
+    display: block;
 }
 
 #books{
@@ -177,7 +182,7 @@ li:hover{
     align-content: center;
 }
 
-#lotrimg{
+.lotrimg{
     height: auto;
     max-height: 40vmax;
     margin: 0.5vmax;
@@ -195,7 +200,7 @@ li:hover{
     align-items: center;
     justify-content: center;
     border-radius: 1vmax;
-    background-color: red;
+    background-color: #aa0000;
     width: 50%;
     transition: 0.3s;
 }
